@@ -1,10 +1,10 @@
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:sixam_mart_delivery/api/api_client.dart';
-import 'package:sixam_mart_delivery/features/chat/domain/models/conversation_model.dart';
-import 'package:sixam_mart_delivery/features/chat/domain/models/message_model.dart';
-import 'package:sixam_mart_delivery/features/chat/domain/repositories/chat_repository_interface.dart';
-import 'package:sixam_mart_delivery/util/app_constants.dart';
+import 'package:delivery_delivery/api/api_client.dart';
+import 'package:delivery_delivery/features/chat/domain/models/conversation_model.dart';
+import 'package:delivery_delivery/features/chat/domain/models/message_model.dart';
+import 'package:delivery_delivery/features/chat/domain/repositories/chat_repository_interface.dart';
+import 'package:delivery_delivery/util/app_constants.dart';
 
 class ChatRepository implements ChatRepositoryInterface {
   final ApiClient apiClient;

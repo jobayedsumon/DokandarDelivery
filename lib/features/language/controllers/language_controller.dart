@@ -1,8 +1,8 @@
-import 'package:sixam_mart_delivery/features/language/domain/models/language_model.dart';
-import 'package:sixam_mart_delivery/util/app_constants.dart';
+import 'package:delivery_delivery/features/language/domain/models/language_model.dart';
+import 'package:delivery_delivery/util/app_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart_delivery/features/language/domain/services/language_service_interface.dart';
+import 'package:delivery_delivery/features/language/domain/services/language_service_interface.dart';
 
 class LocalizationController extends GetxController implements GetxService {
   final LanguageServiceInterface languageServiceInterface;

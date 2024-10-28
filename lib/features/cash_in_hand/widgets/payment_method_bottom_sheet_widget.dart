@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart_delivery/features/profile/controllers/profile_controller.dart';
-import 'package:sixam_mart_delivery/features/splash/controllers/splash_controller.dart';
-import 'package:sixam_mart_delivery/features/cash_in_hand/controllers/cash_in_hand_controller.dart';
-import 'package:sixam_mart_delivery/util/dimensions.dart';
-import 'package:sixam_mart_delivery/util/styles.dart';
-import 'package:sixam_mart_delivery/common/widgets/custom_button_widget.dart';
-import 'package:sixam_mart_delivery/common/widgets/custom_image_widget.dart';
+import 'package:delivery_delivery/features/profile/controllers/profile_controller.dart';
+import 'package:delivery_delivery/features/splash/controllers/splash_controller.dart';
+import 'package:delivery_delivery/features/cash_in_hand/controllers/cash_in_hand_controller.dart';
+import 'package:delivery_delivery/util/dimensions.dart';
+import 'package:delivery_delivery/util/styles.dart';
+import 'package:delivery_delivery/common/widgets/custom_button_widget.dart';
+import 'package:delivery_delivery/common/widgets/custom_image_widget.dart';
 
 class PaymentMethodBottomSheetWidget extends StatefulWidget {
   const PaymentMethodBottomSheetWidget({super.key});

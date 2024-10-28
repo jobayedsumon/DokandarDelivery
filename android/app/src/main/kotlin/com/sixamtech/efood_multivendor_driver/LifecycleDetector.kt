@@ -1,4 +1,4 @@
-package com.sixamtech.sixam_mart_delivery_app
+package delivery.dokandar.xyz
 
 import android.app.Activity
 import android.app.Application

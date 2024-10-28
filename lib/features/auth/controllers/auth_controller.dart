@@ -1,13 +1,13 @@
 import 'dart:async';
-import 'package:sixam_mart_delivery/api/api_client.dart';
-import 'package:sixam_mart_delivery/features/auth/domain/models/delivery_man_body_model.dart';
-import 'package:sixam_mart_delivery/common/models/response_model.dart';
-import 'package:sixam_mart_delivery/features/auth/domain/models/vehicle_model.dart';
-import 'package:sixam_mart_delivery/helper/route_helper.dart';
-import 'package:sixam_mart_delivery/common/widgets/custom_snackbar_widget.dart';
+import 'package:delivery_delivery/api/api_client.dart';
+import 'package:delivery_delivery/features/auth/domain/models/delivery_man_body_model.dart';
+import 'package:delivery_delivery/common/models/response_model.dart';
+import 'package:delivery_delivery/features/auth/domain/models/vehicle_model.dart';
+import 'package:delivery_delivery/helper/route_helper.dart';
+import 'package:delivery_delivery/common/widgets/custom_snackbar_widget.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:sixam_mart_delivery/features/auth/domain/services/auth_service_interface.dart';
+import 'package:delivery_delivery/features/auth/domain/services/auth_service_interface.dart';
 
 class AuthController extends GetxController implements GetxService {
   final AuthServiceInterface authServiceInterface;

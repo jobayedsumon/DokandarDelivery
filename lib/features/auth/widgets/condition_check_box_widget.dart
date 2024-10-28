@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart_delivery/features/auth/controllers/auth_controller.dart';
-import 'package:sixam_mart_delivery/helper/route_helper.dart';
-import 'package:sixam_mart_delivery/util/dimensions.dart';
-import 'package:sixam_mart_delivery/util/styles.dart';
+import 'package:delivery_delivery/features/auth/controllers/auth_controller.dart';
+import 'package:delivery_delivery/helper/route_helper.dart';
+import 'package:delivery_delivery/util/dimensions.dart';
+import 'package:delivery_delivery/util/styles.dart';
 
 class ConditionCheckBoxWidget extends StatelessWidget {
   final AuthController authController;

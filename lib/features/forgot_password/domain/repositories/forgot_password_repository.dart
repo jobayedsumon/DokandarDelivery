@@ -1,11 +1,11 @@
 import 'dart:async';
-import 'package:sixam_mart_delivery/api/api_client.dart';
-import 'package:sixam_mart_delivery/common/models/response_model.dart';
-import 'package:sixam_mart_delivery/features/profile/domain/models/profile_model.dart';
-import 'package:sixam_mart_delivery/util/app_constants.dart';
+import 'package:delivery_delivery/api/api_client.dart';
+import 'package:delivery_delivery/common/models/response_model.dart';
+import 'package:delivery_delivery/features/profile/domain/models/profile_model.dart';
+import 'package:delivery_delivery/util/app_constants.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:sixam_mart_delivery/features/forgot_password/domain/repositories/forgot_password_repository_interface.dart';
+import 'package:delivery_delivery/features/forgot_password/domain/repositories/forgot_password_repository_interface.dart';
 
 class ForgotPasswordRepository implements ForgotPasswordRepositoryInterface {
   final ApiClient apiClient;

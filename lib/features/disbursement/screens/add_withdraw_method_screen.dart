@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart_delivery/features/disbursement/controllers/disbursement_controller.dart';
-import 'package:sixam_mart_delivery/helper/date_converter_helper.dart';
-import 'package:sixam_mart_delivery/util/dimensions.dart';
-import 'package:sixam_mart_delivery/util/styles.dart';
-import 'package:sixam_mart_delivery/common/widgets/custom_app_bar_widget.dart';
-import 'package:sixam_mart_delivery/common/widgets/custom_button_widget.dart';
-import 'package:sixam_mart_delivery/common/widgets/custom_dropdown_widget.dart';
-import 'package:sixam_mart_delivery/common/widgets/custom_snackbar_widget.dart';
-import 'package:sixam_mart_delivery/common/widgets/text_field_widget.dart';
+import 'package:delivery_delivery/features/disbursement/controllers/disbursement_controller.dart';
+import 'package:delivery_delivery/helper/date_converter_helper.dart';
+import 'package:delivery_delivery/util/dimensions.dart';
+import 'package:delivery_delivery/util/styles.dart';
+import 'package:delivery_delivery/common/widgets/custom_app_bar_widget.dart';
+import 'package:delivery_delivery/common/widgets/custom_button_widget.dart';
+import 'package:delivery_delivery/common/widgets/custom_dropdown_widget.dart';
+import 'package:delivery_delivery/common/widgets/custom_snackbar_widget.dart';
+import 'package:delivery_delivery/common/widgets/text_field_widget.dart';
 
 class AddWithDrawMethodScreen extends StatefulWidget {
   const AddWithDrawMethodScreen({super.key});

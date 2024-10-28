@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:sixam_mart_delivery/api/api_client.dart';
-import 'package:sixam_mart_delivery/features/language/domain/repositories/language_repository_interface.dart';
-import 'package:sixam_mart_delivery/util/app_constants.dart';
+import 'package:delivery_delivery/api/api_client.dart';
+import 'package:delivery_delivery/features/language/domain/repositories/language_repository_interface.dart';
+import 'package:delivery_delivery/util/app_constants.dart';
 
 class LanguageRepository implements LanguageRepositoryInterface {
   final ApiClient apiClient;

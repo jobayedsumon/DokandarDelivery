@@ -1,13 +1,13 @@
-import 'package:sixam_mart_delivery/util/styles.dart';
-import 'package:sixam_mart_delivery/common/widgets/custom_app_bar_widget.dart';
-import 'package:sixam_mart_delivery/features/language/widgets/language_widget.dart';
+import 'package:delivery_delivery/util/styles.dart';
+import 'package:delivery_delivery/common/widgets/custom_app_bar_widget.dart';
+import 'package:delivery_delivery/features/language/widgets/language_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:sixam_mart_delivery/features/language/controllers/language_controller.dart';
-import 'package:sixam_mart_delivery/util/app_constants.dart';
-import 'package:sixam_mart_delivery/util/dimensions.dart';
-import 'package:sixam_mart_delivery/util/images.dart';
-import 'package:sixam_mart_delivery/common/widgets/custom_button_widget.dart';
-import 'package:sixam_mart_delivery/common/widgets/custom_snackbar_widget.dart';
+import 'package:delivery_delivery/features/language/controllers/language_controller.dart';
+import 'package:delivery_delivery/util/app_constants.dart';
+import 'package:delivery_delivery/util/dimensions.dart';
+import 'package:delivery_delivery/util/images.dart';
+import 'package:delivery_delivery/common/widgets/custom_button_widget.dart';
+import 'package:delivery_delivery/common/widgets/custom_snackbar_widget.dart';
 import 'package:get/get.dart';
 
 class ChooseLanguageScreen extends StatelessWidget {

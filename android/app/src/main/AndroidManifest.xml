@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sixamtech.sixam_mart_delivery_app"
+    package="delivery.dokandar.xyz"
     xmlns:tools="http://schemas.android.com/tools">
     <!-- io.flutter.app.FlutterApplication is an android.app.Application that
          calls FlutterMain.startInitialization(this); in its onCreate method.
@@ -29,13 +29,13 @@
 
     <application
         tools:replace="android:label"
-        android:label="6amMart Delivery"
+        android:label="Dokandar Delivery"
         android:name="${applicationName}"
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher">
         <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCaCSJ0BZItSyXqBv8vpD1N4WBffJeKhLQ"/>
+            android:value="AIzaSyDNtJMAKKfqKgW8cjshI9n6AWE9CKQA5KE"/>
 
         <activity
             android:name=".MainActivity"
@@ -64,7 +64,7 @@
               />
             <meta-data
                 android:name="com.google.firebase.messaging.default_notification_channel_id"
-                android:value="6ammart" />
+                android:value="610443387774" />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -77,7 +77,7 @@
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
         <service
-            android:name="com.sixamtech.sixam_mart_delivery_app.BackgroundService"
+            android:name="delivery.dokandar.xyz.BackgroundService"
             android:enabled="true"
             android:exported="false" />
         <meta-data

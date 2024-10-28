@@ -1,8 +1,8 @@
 import 'package:flutter_html/flutter_html.dart';
 import 'package:flutter/material.dart';
-import 'package:sixam_mart_delivery/features/html/controllers/html_controller.dart';
-import 'package:sixam_mart_delivery/util/dimensions.dart';
-import 'package:sixam_mart_delivery/common/widgets/custom_app_bar_widget.dart';
+import 'package:delivery_delivery/features/html/controllers/html_controller.dart';
+import 'package:delivery_delivery/util/dimensions.dart';
+import 'package:delivery_delivery/common/widgets/custom_app_bar_widget.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 

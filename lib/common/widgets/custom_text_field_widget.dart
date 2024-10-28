@@ -1,9 +1,9 @@
 import 'package:country_code_picker/country_code_picker.dart';
-import 'package:sixam_mart_delivery/util/dimensions.dart';
-import 'package:sixam_mart_delivery/util/styles.dart';
+import 'package:delivery_delivery/util/dimensions.dart';
+import 'package:delivery_delivery/util/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:sixam_mart_delivery/common/widgets/code_picker_widget.dart';
+import 'package:delivery_delivery/common/widgets/code_picker_widget.dart';
 
 class CustomTextFieldWidget extends StatefulWidget {
   final String hintText;
@@ -120,6 +120,7 @@ class CustomTextFieldWidgetState extends State<CustomTextFieldWidget> {
                   onChanged: widget.onCountryChanged,
                   initialSelection: widget.countryDialCode,
                   favorite: [widget.countryDialCode!],
+                  enabled: false,
                   textStyle: robotoRegular.copyWith(
                     fontSize: Dimensions.fontSizeDefault, color: Theme.of(context).textTheme.bodyMedium!.color,
                   ),

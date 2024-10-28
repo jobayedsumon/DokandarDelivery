@@ -1,4 +1,4 @@
-package com.sixamtech.sixam_mart_delivery_app
+package delivery.dokandar.xyz
 
 import android.app.Service
 import android.content.Context
@@ -90,7 +90,7 @@ class BackgroundService : Service(), LifecycleDetector.Listener {
     }
 
     companion object {
-        private const val SHARED_PREFERENCES_NAME = "com.sixamtech.sixam_mart_delivery_app"
+        private const val SHARED_PREFERENCES_NAME = "delivery.dokandar.xyz"
 
         private const val KEY_CALLBACK_RAW_HANDLE = "callbackRawHandle"
 

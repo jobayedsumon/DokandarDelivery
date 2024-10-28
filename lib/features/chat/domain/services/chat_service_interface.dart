@@ -1,8 +1,8 @@
 import 'package:image_picker/image_picker.dart';
-import 'package:sixam_mart_delivery/api/api_client.dart';
-import 'package:sixam_mart_delivery/features/chat/domain/models/conversation_model.dart';
-import 'package:sixam_mart_delivery/features/chat/domain/models/message_model.dart';
-import 'package:sixam_mart_delivery/features/notification/domain/models/notification_body_model.dart';
+import 'package:delivery_delivery/api/api_client.dart';
+import 'package:delivery_delivery/features/chat/domain/models/conversation_model.dart';
+import 'package:delivery_delivery/features/chat/domain/models/message_model.dart';
+import 'package:delivery_delivery/features/notification/domain/models/notification_body_model.dart';
 
 abstract class ChatServiceInterface {
   Future<ConversationsModel?> getConversationList(int offset);

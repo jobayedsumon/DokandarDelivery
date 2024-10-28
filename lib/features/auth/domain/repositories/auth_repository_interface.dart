@@ -1,6 +1,6 @@
-import 'package:sixam_mart_delivery/api/api_client.dart';
-import 'package:sixam_mart_delivery/features/auth/domain/models/delivery_man_body_model.dart';
-import 'package:sixam_mart_delivery/interface/repository_interface.dart';
+import 'package:delivery_delivery/api/api_client.dart';
+import 'package:delivery_delivery/features/auth/domain/models/delivery_man_body_model.dart';
+import 'package:delivery_delivery/interface/repository_interface.dart';
 
 abstract class AuthRepositoryInterface implements RepositoryInterface {
   Future<dynamic> login(String phone, String password);

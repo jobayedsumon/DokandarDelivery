@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:sixam_mart_delivery/features/html/domain/services/html_service_interface.dart';
+import 'package:delivery_delivery/features/html/domain/services/html_service_interface.dart';
 
 class HtmlController extends GetxController implements GetxService {
   final HtmlServiceInterface htmlServiceInterface;

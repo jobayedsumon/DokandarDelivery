@@ -1,6 +1,6 @@
-import 'package:sixam_mart_delivery/common/models/config_model.dart';
+import 'package:delivery_delivery/common/models/config_model.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart_delivery/features/splash/domain/services/splash_service_interface.dart';
+import 'package:delivery_delivery/features/splash/domain/services/splash_service_interface.dart';
 
 class SplashController extends GetxController implements GetxService {
   final SplashServiceInterface splashServiceInterface;

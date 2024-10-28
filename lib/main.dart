@@ -1,16 +1,16 @@
 import 'dart:async';
 import 'dart:io';
-import 'package:sixam_mart_delivery/features/auth/controllers/auth_controller.dart';
-import 'package:sixam_mart_delivery/features/language/controllers/language_controller.dart';
-import 'package:sixam_mart_delivery/features/splash/controllers/splash_controller.dart';
-import 'package:sixam_mart_delivery/common/controllers/theme_controller.dart';
-import 'package:sixam_mart_delivery/features/notification/domain/models/notification_body_model.dart';
-import 'package:sixam_mart_delivery/helper/notification_helper.dart';
-import 'package:sixam_mart_delivery/helper/route_helper.dart';
-import 'package:sixam_mart_delivery/theme/dark_theme.dart';
-import 'package:sixam_mart_delivery/theme/light_theme.dart';
-import 'package:sixam_mart_delivery/util/app_constants.dart';
-import 'package:sixam_mart_delivery/util/messages.dart';
+import 'package:delivery_delivery/features/auth/controllers/auth_controller.dart';
+import 'package:delivery_delivery/features/language/controllers/language_controller.dart';
+import 'package:delivery_delivery/features/splash/controllers/splash_controller.dart';
+import 'package:delivery_delivery/common/controllers/theme_controller.dart';
+import 'package:delivery_delivery/features/notification/domain/models/notification_body_model.dart';
+import 'package:delivery_delivery/helper/notification_helper.dart';
+import 'package:delivery_delivery/helper/route_helper.dart';
+import 'package:delivery_delivery/theme/dark_theme.dart';
+import 'package:delivery_delivery/theme/light_theme.dart';
+import 'package:delivery_delivery/util/app_constants.dart';
+import 'package:delivery_delivery/util/messages.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
@@ -31,10 +31,10 @@ Future<void> main() async {
   if(GetPlatform.isAndroid) {
     await Firebase.initializeApp(
       options: const FirebaseOptions(
-        apiKey: "AIzaSyCic6Mw3RRPFcimXhwGidwhCN0tXY7HFFc",
-        appId: "1:1000163153346:android:9d8caf29b912e11606b25b",
-        messagingSenderId: "1000163153346",
-        projectId: "ammart-8885e",
+        apiKey: "AIzaSyDNtJMAKKfqKgW8cjshI9n6AWE9CKQA5KE",
+        appId: "1:610443387774:android:f131427bd533712b60892f",
+        messagingSenderId: "610443387774",
+        projectId: "dokandar-316216",
       ),
     );
   }else {

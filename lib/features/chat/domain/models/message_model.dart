@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:sixam_mart_delivery/features/chat/domain/models/conversation_model.dart';
+import 'package:delivery_delivery/features/chat/domain/models/conversation_model.dart';
 
 class MessageModel {
   int? totalSize;

@@ -1,8 +1,8 @@
-import 'package:sixam_mart_delivery/features/language/controllers/language_controller.dart';
-import 'package:sixam_mart_delivery/features/language/domain/models/language_model.dart';
-import 'package:sixam_mart_delivery/util/app_constants.dart';
-import 'package:sixam_mart_delivery/util/dimensions.dart';
-import 'package:sixam_mart_delivery/util/styles.dart';
+import 'package:delivery_delivery/features/language/controllers/language_controller.dart';
+import 'package:delivery_delivery/features/language/domain/models/language_model.dart';
+import 'package:delivery_delivery/util/app_constants.dart';
+import 'package:delivery_delivery/util/dimensions.dart';
+import 'package:delivery_delivery/util/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

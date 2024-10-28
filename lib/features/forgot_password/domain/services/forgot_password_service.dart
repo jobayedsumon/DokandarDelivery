@@ -1,7 +1,7 @@
-import 'package:sixam_mart_delivery/common/models/response_model.dart';
-import 'package:sixam_mart_delivery/features/forgot_password/domain/repositories/forgot_password_repository_interface.dart';
-import 'package:sixam_mart_delivery/features/forgot_password/domain/services/forgot_password_service_interface.dart';
-import 'package:sixam_mart_delivery/features/profile/domain/models/profile_model.dart';
+import 'package:delivery_delivery/common/models/response_model.dart';
+import 'package:delivery_delivery/features/forgot_password/domain/repositories/forgot_password_repository_interface.dart';
+import 'package:delivery_delivery/features/forgot_password/domain/services/forgot_password_service_interface.dart';
+import 'package:delivery_delivery/features/profile/domain/models/profile_model.dart';
 
 class ForgotPasswordService implements ForgotPasswordServiceInterface {
   final ForgotPasswordRepositoryInterface forgotPasswordRepositoryInterface;

@@ -1,14 +1,14 @@
 import 'dart:io';
-import 'package:sixam_mart_delivery/features/auth/controllers/auth_controller.dart';
-import 'package:sixam_mart_delivery/features/profile/controllers/profile_controller.dart';
-import 'package:sixam_mart_delivery/features/splash/controllers/splash_controller.dart';
-import 'package:sixam_mart_delivery/features/profile/domain/models/profile_model.dart';
-import 'package:sixam_mart_delivery/util/dimensions.dart';
-import 'package:sixam_mart_delivery/common/widgets/custom_button_widget.dart';
-import 'package:sixam_mart_delivery/common/widgets/custom_image_widget.dart';
-import 'package:sixam_mart_delivery/common/widgets/custom_snackbar_widget.dart';
-import 'package:sixam_mart_delivery/common/widgets/text_field_widget.dart';
-import 'package:sixam_mart_delivery/features/profile/widgets/profile_bg_widget.dart';
+import 'package:delivery_delivery/features/auth/controllers/auth_controller.dart';
+import 'package:delivery_delivery/features/profile/controllers/profile_controller.dart';
+import 'package:delivery_delivery/features/splash/controllers/splash_controller.dart';
+import 'package:delivery_delivery/features/profile/domain/models/profile_model.dart';
+import 'package:delivery_delivery/util/dimensions.dart';
+import 'package:delivery_delivery/common/widgets/custom_button_widget.dart';
+import 'package:delivery_delivery/common/widgets/custom_image_widget.dart';
+import 'package:delivery_delivery/common/widgets/custom_snackbar_widget.dart';
+import 'package:delivery_delivery/common/widgets/text_field_widget.dart';
+import 'package:delivery_delivery/features/profile/widgets/profile_bg_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

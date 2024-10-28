@@ -2,11 +2,11 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:sixam_mart_delivery/api/api_client.dart';
-import 'package:sixam_mart_delivery/features/auth/domain/models/delivery_man_body_model.dart';
-import 'package:sixam_mart_delivery/features/auth/domain/models/vehicle_model.dart';
-import 'package:sixam_mart_delivery/features/auth/domain/repositories/auth_repository_interface.dart';
-import 'package:sixam_mart_delivery/util/app_constants.dart';
+import 'package:delivery_delivery/api/api_client.dart';
+import 'package:delivery_delivery/features/auth/domain/models/delivery_man_body_model.dart';
+import 'package:delivery_delivery/features/auth/domain/models/vehicle_model.dart';
+import 'package:delivery_delivery/features/auth/domain/repositories/auth_repository_interface.dart';
+import 'package:delivery_delivery/util/app_constants.dart';
 
 class AuthRepository implements AuthRepositoryInterface {
   final ApiClient apiClient;

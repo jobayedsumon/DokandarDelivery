@@ -1,14 +1,14 @@
 import 'dart:async';
 import 'package:connectivity_plus/connectivity_plus.dart';
-import 'package:sixam_mart_delivery/features/auth/controllers/auth_controller.dart';
-import 'package:sixam_mart_delivery/features/profile/controllers/profile_controller.dart';
-import 'package:sixam_mart_delivery/features/splash/controllers/splash_controller.dart';
-import 'package:sixam_mart_delivery/features/notification/domain/models/notification_body_model.dart';
-import 'package:sixam_mart_delivery/helper/route_helper.dart';
-import 'package:sixam_mart_delivery/util/app_constants.dart';
-import 'package:sixam_mart_delivery/util/dimensions.dart';
-import 'package:sixam_mart_delivery/util/images.dart';
-import 'package:sixam_mart_delivery/util/styles.dart';
+import 'package:delivery_delivery/features/auth/controllers/auth_controller.dart';
+import 'package:delivery_delivery/features/profile/controllers/profile_controller.dart';
+import 'package:delivery_delivery/features/splash/controllers/splash_controller.dart';
+import 'package:delivery_delivery/features/notification/domain/models/notification_body_model.dart';
+import 'package:delivery_delivery/helper/route_helper.dart';
+import 'package:delivery_delivery/util/app_constants.dart';
+import 'package:delivery_delivery/util/dimensions.dart';
+import 'package:delivery_delivery/util/images.dart';
+import 'package:delivery_delivery/util/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

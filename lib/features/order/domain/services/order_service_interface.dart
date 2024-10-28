@@ -1,12 +1,12 @@
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:sixam_mart_delivery/api/api_client.dart';
-import 'package:sixam_mart_delivery/common/models/response_model.dart';
-import 'package:sixam_mart_delivery/features/order/domain/models/ignore_model.dart';
-import 'package:sixam_mart_delivery/features/order/domain/models/order_cancellation_body.dart';
-import 'package:sixam_mart_delivery/features/order/domain/models/order_details_model.dart';
-import 'package:sixam_mart_delivery/features/order/domain/models/order_model.dart';
-import 'package:sixam_mart_delivery/features/order/domain/models/update_status_body_model.dart';
+import 'package:delivery_delivery/api/api_client.dart';
+import 'package:delivery_delivery/common/models/response_model.dart';
+import 'package:delivery_delivery/features/order/domain/models/ignore_model.dart';
+import 'package:delivery_delivery/features/order/domain/models/order_cancellation_body.dart';
+import 'package:delivery_delivery/features/order/domain/models/order_details_model.dart';
+import 'package:delivery_delivery/features/order/domain/models/order_model.dart';
+import 'package:delivery_delivery/features/order/domain/models/update_status_body_model.dart';
 
 abstract class OrderServiceInterface{
   Future<List<CancellationData>?> getCancelReasons();

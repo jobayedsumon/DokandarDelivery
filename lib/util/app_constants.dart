@@ -1,11 +1,11 @@
-import 'package:sixam_mart_delivery/features/language/domain/models/language_model.dart';
-import 'package:sixam_mart_delivery/util/images.dart';
+import 'package:delivery_delivery/features/language/domain/models/language_model.dart';
+import 'package:delivery_delivery/util/images.dart';
 
 class AppConstants {
-  static const String appName = '6amMart Delivery';
+  static const String appName = 'Dokandar Delivery';
   static const double appVersion = 2.7; // web version: 2.7
 
-  static const String baseUrl = 'https://6ammart-admin.6amtech.com';
+  static const String baseUrl = 'https://admin.dokandar.online';
   static const String configUri = '/api/v1/config';
   static const String forgetPasswordUri = '/api/v1/auth/delivery-man/forgot-password';
   static const String verifyTokenUri = '/api/v1/auth/delivery-man/verify-token';
@@ -54,17 +54,17 @@ class AppConstants {
   static const String searchConversationListUri = '/api/v1/delivery-man/message/search-list';
 
   // Shared Key
-  static const String theme = 'sixam_mart_delivery_theme';
-  static const String token = 'sixam_mart_delivery_token';
-  static const String countryCode = 'sixam_mart_delivery_country_code';
-  static const String languageCode = 'sixam_mart_delivery_language_code';
-  static const String userPassword = 'sixam_mart_delivery_user_password';
-  static const String userAddress = 'sixam_mart_delivery_user_address';
-  static const String userNumber = 'sixam_mart_delivery_user_number';
-  static const String userCountryCode = 'sixam_mart_delivery_user_country_code';
-  static const String notification = 'sixam_mart_delivery_notification';
-  static const String notificationCount = 'sixam_mart_delivery_notification_count';
-  static const String ignoreList = 'sixam_mart_delivery_ignore_list';
+  static const String theme = 'delivery_delivery_theme';
+  static const String token = 'delivery_delivery_token';
+  static const String countryCode = 'delivery_delivery_country_code';
+  static const String languageCode = 'delivery_delivery_language_code';
+  static const String userPassword = 'delivery_delivery_user_password';
+  static const String userAddress = 'delivery_delivery_user_address';
+  static const String userNumber = 'delivery_delivery_user_number';
+  static const String userCountryCode = 'delivery_delivery_user_country_code';
+  static const String notification = 'delivery_delivery_notification';
+  static const String notificationCount = 'delivery_delivery_notification_count';
+  static const String ignoreList = 'delivery_delivery_ignore_list';
   static const String topic = 'all_zone_delivery_man';
   static const String zoneTopic = 'zone_topic';
   static const String localizationKey = 'X-localization';
@@ -90,7 +90,7 @@ class AppConstants {
 
   static List<LanguageModel> languages = [
     LanguageModel(imageUrl: Images.english, languageName: 'English', countryCode: 'US', languageCode: 'en'),
-    LanguageModel(imageUrl: Images.arabic, languageName: 'Arabic', countryCode: 'SA', languageCode: 'ar'),
+    // LanguageModel(imageUrl: Images.arabic, languageName: 'Arabic', countryCode: 'SA', languageCode: 'ar'),
     // LanguageModel(imageUrl: Images.arabic, languageName: 'Spanish', countryCode: 'ES', languageCode: 'es'),
     // LanguageModel(imageUrl: Images.bangla, languageName: 'Bengali', countryCode: 'BN', languageCode: 'bn'),
   ];

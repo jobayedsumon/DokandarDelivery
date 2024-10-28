@@ -3,14 +3,14 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:sixam_mart_delivery/features/profile/controllers/profile_controller.dart';
-import 'package:sixam_mart_delivery/features/splash/controllers/splash_controller.dart';
-import 'package:sixam_mart_delivery/features/address/domain/models/address_model.dart';
-import 'package:sixam_mart_delivery/features/address/domain/models/zone_model.dart';
-import 'package:sixam_mart_delivery/features/address/domain/models/zone_response_model.dart';
+import 'package:delivery_delivery/features/profile/controllers/profile_controller.dart';
+import 'package:delivery_delivery/features/splash/controllers/splash_controller.dart';
+import 'package:delivery_delivery/features/address/domain/models/address_model.dart';
+import 'package:delivery_delivery/features/address/domain/models/zone_model.dart';
+import 'package:delivery_delivery/features/address/domain/models/zone_response_model.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart_delivery/features/address/domain/services/address_service_interface.dart';
+import 'package:delivery_delivery/features/address/domain/services/address_service_interface.dart';
 
 class AddressController extends GetxController implements GetxService {
   final AddressServiceInterface addressServiceInterface;

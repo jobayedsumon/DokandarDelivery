@@ -1,4 +1,4 @@
-import 'package:sixam_mart_delivery/interface/repository_interface.dart';
+import 'package:delivery_delivery/interface/repository_interface.dart';
 
 abstract class AddressRepositoryInterface implements RepositoryInterface {
   Future<dynamic> getZone(String lat, String lng);

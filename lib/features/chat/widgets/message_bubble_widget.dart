@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart_delivery/features/splash/controllers/splash_controller.dart';
-import 'package:sixam_mart_delivery/common/models/config_model.dart';
-import 'package:sixam_mart_delivery/features/chat/domain/models/conversation_model.dart';
-import 'package:sixam_mart_delivery/features/chat/domain/models/message_model.dart';
-import 'package:sixam_mart_delivery/helper/date_converter_helper.dart';
-import 'package:sixam_mart_delivery/util/app_constants.dart';
-import 'package:sixam_mart_delivery/util/dimensions.dart';
-import 'package:sixam_mart_delivery/util/styles.dart';
-import 'package:sixam_mart_delivery/common/widgets/custom_image_widget.dart';
-import 'package:sixam_mart_delivery/features/chat/widgets/image_diaglog_widget.dart';
+import 'package:delivery_delivery/features/splash/controllers/splash_controller.dart';
+import 'package:delivery_delivery/common/models/config_model.dart';
+import 'package:delivery_delivery/features/chat/domain/models/conversation_model.dart';
+import 'package:delivery_delivery/features/chat/domain/models/message_model.dart';
+import 'package:delivery_delivery/helper/date_converter_helper.dart';
+import 'package:delivery_delivery/util/app_constants.dart';
+import 'package:delivery_delivery/util/dimensions.dart';
+import 'package:delivery_delivery/util/styles.dart';
+import 'package:delivery_delivery/common/widgets/custom_image_widget.dart';
+import 'package:delivery_delivery/features/chat/widgets/image_diaglog_widget.dart';
 
 class MessageBubbleWidget extends StatelessWidget {
   final Message message;

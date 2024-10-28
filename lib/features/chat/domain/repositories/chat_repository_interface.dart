@@ -1,5 +1,5 @@
-import 'package:sixam_mart_delivery/api/api_client.dart';
-import 'package:sixam_mart_delivery/interface/repository_interface.dart';
+import 'package:delivery_delivery/api/api_client.dart';
+import 'package:delivery_delivery/interface/repository_interface.dart';
 
 abstract class ChatRepositoryInterface implements RepositoryInterface {
   Future<dynamic> getConversationList(int offset);

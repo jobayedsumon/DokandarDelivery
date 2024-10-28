@@ -1,9 +1,9 @@
 import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
-import 'package:sixam_mart_delivery/api/api_checker.dart';
-import 'package:sixam_mart_delivery/common/models/error_response.dart';
-import 'package:sixam_mart_delivery/util/app_constants.dart';
+import 'package:delivery_delivery/api/api_checker.dart';
+import 'package:delivery_delivery/common/models/error_response.dart';
+import 'package:delivery_delivery/util/app_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
