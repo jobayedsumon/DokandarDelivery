@@ -131,6 +131,9 @@ class SignInScreen extends StatelessWidget {
                     ])),
                   ) : const SizedBox(),
 
+                  const SizedBox(height: 20),
+                  Text('* This app requires background location access to track order', style: robotoRegular.copyWith(color: Theme.of(context).disabledColor)),
+
                 ]);
               }),
             ),
