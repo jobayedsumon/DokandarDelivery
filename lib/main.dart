@@ -17,6 +17,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
 import 'package:url_strategy/url_strategy.dart';
+import 'agora/call_manager.dart';
+import 'features/profile/controllers/profile_controller.dart';
 import 'helper/get_di.dart' as di;
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
@@ -68,6 +70,11 @@ class MyApp extends StatelessWidget {
       if (isSuccess) {
         if (Get.find<AuthController>().isLoggedIn()) {
           Get.find<AuthController>().updateToken();
+          // Initialize CallManager
+          ProfileController profileController = Get.find<ProfileController>();
+          await profileController.getProfile();
+          Get.put(CallManager(profileController.profileModel!), permanent: true);
+          Get.find<CallManager>();
         }
       }
     });

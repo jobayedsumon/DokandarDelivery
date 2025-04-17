@@ -282,6 +282,8 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> with WidgetsBin
 
                     InfoCardWidget(
                       title: parcel ? 'sender_details'.tr : 'store_details'.tr,
+                      userId: orderController.orderDetailsModel![0].vendorId ?? 0,
+                      userType: 'vendor',
                       address: parcel ? controllerOrderModel.deliveryAddress : DeliveryAddress(address: controllerOrderModel.storeAddress),
                       image: parcel ? '' : '${Get.find<SplashController>().configModel!.baseUrls!.storeImageUrl}/${controllerOrderModel.storeLogo}',
                       name: parcel ? controllerOrderModel.deliveryAddress!.contactPersonName : controllerOrderModel.storeName,
@@ -306,6 +308,8 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> with WidgetsBin
 
                     InfoCardWidget(
                       title: parcel ? 'receiver_details'.tr : 'customer_contact_details'.tr,
+                      userId: controllerOrderModel.customer!.id ?? 0,
+                      userType: 'customer',
                       address: parcel ? controllerOrderModel.receiverDetails : controllerOrderModel.deliveryAddress,
                       image: parcel ? '' : controllerOrderModel.customer != null ? '${Get.find<SplashController>().configModel!.baseUrls!.customerImageUrl}/${controllerOrderModel.customer!.image}' : '',
                       name: parcel ? controllerOrderModel.receiverDetails!.contactPersonName : controllerOrderModel.deliveryAddress!.contactPersonName,

@@ -6,9 +6,12 @@ import 'package:delivery_delivery/common/widgets/custom_snackbar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher_string.dart';
+import 'package:delivery_delivery/agora/call_widgets.dart';
 
 class InfoCardWidget extends StatelessWidget {
   final String title;
+  final int userId;
+  final String userType;
   final String image;
   final String? name;
   final DeliveryAddress? address;
@@ -19,7 +22,7 @@ class InfoCardWidget extends StatelessWidget {
   final bool isStore;
   final Function? messageOnTap;
   final OrderModel order;
-  const InfoCardWidget({super.key, required this.title, required this.image, required this.name, required this.address, required this.phone,
+  const InfoCardWidget({super.key, required this.title, required this.userId, required this.userType, required this.image, required this.name, required this.address, required this.phone,
     required this.latitude, required this.longitude, required this.showButton, this.messageOnTap, this.isStore = false, required this.order});
 
   @override
@@ -69,7 +72,13 @@ class InfoCardWidget extends StatelessWidget {
             ]),
 
             showButton ? Row(children: [
-
+              CallButton(
+                userId: userId,
+                userType: userType,
+                name: name ?? '',
+                image: image,
+              ),
+              const SizedBox(width: Dimensions.paddingSizeSmall),
               TextButton.icon(
                 onPressed: () async {
                   if(await canLaunchUrlString('tel:$phone')) {

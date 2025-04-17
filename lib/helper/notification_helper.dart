@@ -72,7 +72,7 @@ class NotificationHelper {
           Get.find<ChatController>().getConversationList(1);
         }
         NotificationHelper.showNotification(message, flutterLocalNotificationsPlugin);
-      }else {
+      } else if (message.data['type'] != 'incoming_call' && message.data['type'] != 'call_ended') {
         String? type = message.data['type'];
 
         if (type != 'assign' && type != 'new_order' && type != 'order_request') {
