@@ -153,8 +153,8 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> with WidgetsBin
                 tax = order.totalTaxAmount;
                 taxIncluded = order.taxStatus;
                 additionalCharge = order.additionalCharge!;
-                extraPackagingAmount = order.extraPackagingAmount!;
-                referrerBonusAmount = order.referrerBonusAmount!;
+                extraPackagingAmount = order.extraPackagingAmount ?? 0;
+                referrerBonusAmount = order.referrerBonusAmount ?? 0;
                 couponDiscount = order.couponDiscountAmount;
                 if(isPrescriptionOrder!){
                   double orderAmount = order.orderAmount ?? 0;

@@ -49,4 +49,6 @@ app.*.map.json
 /android/app/release
 
 # Ignore everything in the .fvm directory
-.fvm/*
+
+# FVM Version Cache
+.fvm/
