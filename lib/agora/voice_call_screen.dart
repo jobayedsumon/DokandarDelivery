@@ -36,8 +36,7 @@ class _VoiceCallScreenState extends State<VoiceCallScreen> {
 
   final CallManager callManager = Get.find<CallManager>();
 
-  final AudioCache _audioCache = AudioCache(prefix: 'assets/');
-  late AudioPlayer _audioPlayer = AudioPlayer();
+  final AudioPlayer _audioPlayer = AudioPlayer();
 
   Timer? _callTimeOut; // Timer to enforce the 30 seconds call limit
 
