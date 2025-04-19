@@ -66,6 +66,7 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key, required this.languages, this.body});
 
   void _route() {
+    Get.find<SplashController>().initSharedData();
     Get.find<SplashController>().getConfigData().then((bool isSuccess) async {
       if (isSuccess) {
         if (Get.find<AuthController>().isLoggedIn()) {
@@ -82,11 +83,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if(GetPlatform.isWeb) {
-      Get.find<SplashController>().initSharedData();
-      _route();
-    }
-
+    _route();
     return GetBuilder<ThemeController>(builder: (themeController) {
       return GetBuilder<LocalizationController>(builder: (localizeController) {
         return GetBuilder<SplashController>(builder: (splashController) {

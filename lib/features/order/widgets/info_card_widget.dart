@@ -72,26 +72,12 @@ class InfoCardWidget extends StatelessWidget {
             ]),
 
             showButton ? Row(children: [
+
               CallButton(
                 userId: userId,
                 userType: userType,
                 name: name ?? '',
                 image: image,
-              ),
-              const SizedBox(width: Dimensions.paddingSizeSmall),
-              TextButton.icon(
-                onPressed: () async {
-                  if(await canLaunchUrlString('tel:$phone')) {
-                    launchUrlString('tel:$phone', mode: LaunchMode.externalApplication);
-                  }else {
-                    showCustomSnackBar('invalid_phone_number_found');
-                  }
-                },
-                icon: Icon(Icons.call, color: Theme.of(context).primaryColor, size: 20),
-                label: Text(
-                  'call'.tr,
-                  style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).primaryColor),
-                ),
               ),
 
               isStore ? order.isGuest! ? const SizedBox() : TextButton.icon(
@@ -102,6 +88,21 @@ class InfoCardWidget extends StatelessWidget {
                   style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).primaryColor),
                 ),
               ) : const SizedBox(),
+
+              TextButton.icon(
+                onPressed: () async {
+                  if(await canLaunchUrlString('tel:$phone')) {
+                    launchUrlString('tel:$phone', mode: LaunchMode.externalApplication);
+                  }else {
+                    showCustomSnackBar('invalid_phone_number_found');
+                  }
+                },
+                icon: Icon(Icons.call, color: Theme.of(context).primaryColor, size: 20),
+                label: Text(
+                  'Phone'.tr,
+                  style: robotoRegular.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).primaryColor),
+                ),
+              ),
 
               TextButton.icon(
                 onPressed: () async {

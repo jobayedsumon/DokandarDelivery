@@ -57,7 +57,7 @@ class DashboardScreenState extends State<DashboardScreen> {
       String? type = message.notification!.bodyLocKey;
       String? orderID = message.notification!.titleLocKey;
       bool isParcel = (message.data['order_type'] == 'parcel_order');
-      if(type != 'assign' && type != 'new_order' && type != 'message' && type != 'order_request' && type != 'order_status') {
+      if(type != 'assign' && type != 'new_order' && type != 'message' && type != 'order_request' && type != 'order_status' && message.data['type'] != 'incoming_call' && message.data['type'] != 'call_ended') {
         NotificationHelper.showNotification(message, flutterLocalNotificationsPlugin);
       }
       if(type == 'new_order' || type == 'order_request') {

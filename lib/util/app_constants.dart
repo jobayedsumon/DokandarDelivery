@@ -55,7 +55,7 @@ class AppConstants {
   static const String searchConversationListUri = '/api/v1/delivery-man/message/search-list';
 
   // Push Notification
-  static const String pushNotificationUri = '/api/v1/customer/push-notification';
+  static const String pushNotificationUri = '/api/v1/push-notification';
 
   // Shared Key
   static const String theme = 'delivery_delivery_theme';

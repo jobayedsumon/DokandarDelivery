@@ -1,4 +1,4 @@
-# Use fvm
+# Use fvm 3.19.0
 name: delivery_delivery
 description: A new Flutter application.
 publish_to: 'none' #
