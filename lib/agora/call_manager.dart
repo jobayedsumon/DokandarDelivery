@@ -8,6 +8,7 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:permission_handler/permission_handler.dart';
+
 import '../api/api_client.dart';
 import '../util/app_constants.dart';
 import 'incoming_call_screen.dart';
@@ -15,7 +16,6 @@ import 'incoming_call_screen.dart';
 class CallManager {
   static const _appId = "003181bf5feb444897c5df04ec513194";
   static const _appCertificate = 'db8fb2e6f78c4271a6b7131f53b655df';
-  static const _loggedInUserType = 'deliveryman';
 
   late RtcEngine _engine;
 
@@ -159,7 +159,7 @@ class CallManager {
         'type': 'incoming_call',
         'channel': channel,
         'callerId': _loggedInUser.id.toString(),
-        'callerType': _loggedInUserType,
+        'callerType': 'deliveryman',
         'callerName': '${_loggedInUser.fName} ${_loggedInUser.lName}',
         'callerImage': _loggedInUser.image ??
             'https://placehold.co/100x100/white/red/png?text=${_loggedInUser.fName?[0]}+${_loggedInUser.lName?[0]}',
@@ -196,8 +196,9 @@ class CallManager {
 
   // Answers an incoming call
   Future<void> answerCall(
-    int callerId,
     String channel,
+    int callerId,
+    String callerType,
     String callerName,
     String callerImage,
   ) async {
@@ -208,7 +209,7 @@ class CallManager {
     Get.off(
       () => VoiceCallScreen(
         userId: callerId,
-        userType: _loggedInUserType,
+        userType: callerType,
         name: callerName,
         image: callerImage,
       ),
